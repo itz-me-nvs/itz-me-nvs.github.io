@@ -1402,28 +1402,18 @@ overflow: hidden;
   text-decoration: none;
 }
 
-/* Profile Dialog */
-.dialog-container {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
-}
-.dialog-wrapper {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Dialog Modal Styles */
+dialog {
+  border: none;
+    padding: 0;
+    background-color: transparent;
 }
 
-.dialog-content {
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5) ;
+}
+
+dialog[open] .dialog-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1435,7 +1425,7 @@ overflow: hidden;
   padding: 20px;
 }
 
-.dialog-content .user-profile {
+dialog[open]  .dialog-content .user-profile {
   height: 200px;
     width: 200px;
     border-radius: 50%;
@@ -1445,7 +1435,7 @@ overflow: hidden;
     position: relative;
     border: none;
 }
-.dialog-content .profile-title {
+dialog[open]  .dialog-content .profile-title {
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -1457,7 +1447,7 @@ overflow: hidden;
   cursor: pointer;
 }
 
-.dialog-content .profile-subtitle {
+dialog[open]  .dialog-content .profile-subtitle {
   font-size: 0.7rem;
   font-weight: 400;
   margin: 0;
@@ -1466,7 +1456,7 @@ overflow: hidden;
   margin-bottom: 20px;
 }
 
-.dialog-content .user-profile img {
+dialog[open]  .dialog-content .user-profile img {
   height: 100%;
   width: 100%;
   border-radius: 50%;

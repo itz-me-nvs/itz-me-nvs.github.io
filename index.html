@@ -32,66 +32,63 @@
       <a href="https://itz-me-nvs.github.io/" class="brand-name">
         MUHAMMED NAVAS
       </a>
-      <button class="user-circle" id="profile-btn">
+      <button class="user-circle" id="profile-btn" onclick="openDialog()">
         <img src="./assets/MYPIC.jpg" alt="Profile PIC" />
       </button>
     </div>
 
-    <div id="dialog" class="dialog-container">
-      <div class="dialog-wrapper">
-        <div class="dialog-content">
-          <div class="flex-end w-100">
-            <i class="material-symbols-outlined close-icon" id="close-btn">
-              close
-            </i>
-          </div>
+    <dialog id="dialog">
+      <div class="dialog-content">
+        <div class="flex-end w-100">
+          <i
+            class="material-symbols-outlined close-icon"
+            onclick="closeDialog()"
+          >
+            close
+          </i>
+        </div>
 
-          <div class="user-profile">
-            <img src="./assets/MYPIC.jpg" alt="Profile PIC" />
-          </div>
-          <h3 class="profile-title">Muhammed Navas</h3>
-          <h3 class="profile-subtitle">Web Developer | App Developer</h3>
+        <div class="user-profile">
+          <img src="./assets/MYPIC.jpg" alt="Profile PIC" />
+        </div>
+        <h3 class="profile-title">Muhammed Navas</h3>
+        <h3 class="profile-subtitle">Web Developer | App Developer</h3>
 
-          <div class="flex gap-10">
-            <button class="btn btn-primary">
-              <a
-                href="https://itz-me-nvs.github.io/NAVAS_CV.pdf"
-                target="_blank"
-              >
-                DOWNLOAD CV
-              </a>
-            </button>
-
-            <button class="btn btn-gray">
-              <a href="mailto:muhammednavas320203@gmail.com" target="_blank">
-                Message
-              </a>
-            </button>
-          </div>
-
-          <div class="box">
-            <a
-              href="https://www.facebook.com/muhammed.navas.90226/"
-              target="_blank"
-            >
-              <i class="fab fa-facebook"></i>
+        <div class="flex gap-10">
+          <button class="btn btn-primary">
+            <a href="https://itz-me-nvs.github.io/NAVAS_CV.pdf" target="_blank">
+              DOWNLOAD CV
             </a>
+          </button>
 
-            <a href="https://github.com/itz-me-nvs" target="_blank">
-              <i class="fab fa-github"></i>
+          <button class="btn btn-gray">
+            <a href="mailto:muhammednavas320203@gmail.com" target="_blank">
+              Message
             </a>
+          </button>
+        </div>
 
-            <a
-              href="https://www.linkedin.com/in/muhammed-navas-311090158/"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-          </div>
+        <div class="box">
+          <a
+            href="https://www.facebook.com/muhammed.navas.90226/"
+            target="_blank"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+
+          <a href="https://github.com/itz-me-nvs" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/muhammed-navas-311090158/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
       </div>
-    </div>
-    <!-- </div> -->
+    </dialog>
 
     <div class="scroll-container">
       <section class="container">
