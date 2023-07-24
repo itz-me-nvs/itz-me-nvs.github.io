@@ -18,6 +18,10 @@ const titleList = [
   {
     title: 'Hotelhunt',
     subtitle: 'React Native | Firebase | Spring Animation | React Navigation'
+  },
+  {
+    title: 'Quac INC',
+    subtitle: 'React Native | Context | Firebase'
   }
 ]
 
@@ -72,7 +76,6 @@ observer.observe(imageGalleryContainer);
 });
 
 const nextProject = () => {
-  console.log('here');
   window.scrollTo(0, 0);
   document.querySelector(`.project-background-${currentIndex}`).style.opacity = '0'
   currentIndex =  currentIndex + 1 > galleryItem.length - 1 ? 0 : currentIndex + 1;
@@ -80,9 +83,6 @@ const nextProject = () => {
   nameContainer.firstElementChild.textContent =
   titleList[currentIndex].title;
 nameContainer.children[1].textContent = titleList[currentIndex].subtitle
-
-
-console.log(document.querySelector(`.project-background-${currentIndex}`));
 
 
   var layerClass = "." + 'left'+ "-layer";
